@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 04 MEI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    tools:context=".VerifyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitleVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verifyyour"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:layout_marginTop="200dp" />
+
+        <TextView
+            android:id="@+id/textDescVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sendveri"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/inputCodeVerifyFrm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:autofillHints=""
+            android:hint="@string/enter"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            tools:ignore="TextFields" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:text="@string/send"
+            android:textColor="@color/white"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/textDoesntGetCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:text="@string/code"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textResend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="228dp"
+                android:text="@string/resend"
+                android:textColor="@color/white"
+                app:strokeWidth="0dp"
+                tools:ignore="InvalidId"
+                android:fontFamily="sans-serif-black" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

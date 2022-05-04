@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 04 MEI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5BFFFFFF"
+    tools:context=".RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgHeaderRegisterFrm"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/ic_header"
+            android:contentDescription="@string/header" />
+
+        <ImageView
+            android:id="@+id/imgBackRegisterFrm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/ic_header_back"
+            android:contentDescription="@string/arrowback" />
+
+        <TextView
+            android:id="@+id/txtRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="17dp"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/shadowheader"
+            android:layout_marginTop="65dp">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/inputUserRegFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:autofillHints=""
+                android:backgroundTint="@color/separator"
+                android:hint="@string/user"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:minHeight="48dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/separator"
+                android:textColorHint="@color/separator" />
+
+            <EditText
+                android:id="@+id/inputEmailRegFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/separator"
+                android:hint="@string/email"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:minHeight="48dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/separator"
+                android:textColorHint="@color/separator"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/inputPhoneRegFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/separator"
+                android:hint="@string/phonenumber"
+                android:inputType="textCapWords"
+                android:maxLength="20"
+                android:minHeight="48dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/separator"
+                android:textColorHint="@color/separator"
+                tools:ignore="TextFields" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:buttonTint="@color/lightblue"
+                    android:text="@string/male"
+                    android:textColor="@color/separator" />
+
+                <RadioButton
+                    android:id="@+id/rbtnFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:buttonTint="@color/lightblue"
+                    android:text="@string/female"
+                    android:textColor="@color/separator" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/bloodType"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/separator"
+                    android:entries="@array/blood_type"
+                    android:padding="15dp" />
+
+                <Spinner
+                    android:id="@+id/reshus"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/separator"
+                    android:entries="@array/rhesus"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/inputPassRegFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/separator"
+                android:hint="@string/pass"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:minHeight="48dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/separator"
+                android:textColorHint="@color/separator"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/inputRePassRegFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/separator"
+                android:hint="@string/retypepass"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:minHeight="48dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/separator"
+                android:textColorHint="@color/separator"
+                tools:ignore="TextFields" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbtnPersonal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:buttonTint="@color/lightblue"
+                    android:text="@string/personal"
+                    android:textColor="@color/separator" />
+
+                <RadioButton
+                    android:id="@+id/rbtnOrganization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:buttonTint="@color/lightblue"
+                    android:text="@string/organization"
+                    android:textColor="@color/separator" />
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/job"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/separator"
+                android:entries="@array/job"
+                android:padding="15dp" />
+
+            <EditText
+                android:id="@+id/inputAddressRegFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/separator"
+                android:hint="@string/homeaddress"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:minHeight="48dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/separator"
+                android:textColorHint="@color/separator"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/inputLocationRegFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:backgroundTint="@color/separator"
+                android:drawableEnd="@drawable/ic_blood_needed_location"
+                android:hint="@string/defaultlocation"
+                android:inputType="textCapWords"
+                android:maxLength="80"
+                android:minHeight="48dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="14dp"
+                android:textColor="@color/separator"
+                android:textColorHint="@color/separator"
+                tools:ignore="TextFields" />
+
+            <CheckBox
+                android:id="@+id/checkBoxAgree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/lightblue"
+                android:text="@string/agree"
+                android:textColor="@color/separator" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/register"
+                android:textColor="@color/lightblue"
+                app:strokeColor="@color/lightblue"
+                app:strokeWidth="2dp"
+                tools:ignore="DuplicateSpeakableTextCheck">
+
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

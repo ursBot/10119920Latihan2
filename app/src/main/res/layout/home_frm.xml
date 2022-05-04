@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+TANGGAL  : 04 MEI 2022
+NAMA     : UMAR SAID ADI PRANOTO
+NIM      : 10119920
+KELAS    : IF10
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgHeaderHomeFrm"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/ic_header_profile"
+            android:contentDescription="@string/headerprofile" />
+
+        <ImageView
+            android:id="@+id/imgSideMenuHomeFrm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_side_menu"
+            android:contentDescription="@string/headerprofile"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp" />
+
+        <ImageView
+            android:id="@+id/imgNotifHomeFrm"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_notification"
+            android:contentDescription="@string/headerprofile"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="15dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/shadowheader"
+            android:layout_marginTop="160dp">
+
+        </RelativeLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/img_profile_umar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            app:border_width="4dp"
+            app:border_color="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textNameHomeFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="205dp"
+                android:gravity="center"
+                android:text="@string/name"
+                android:textColor="@color/lightblue"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/textBloodTypeHomeFrm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="@string/bloodtype"
+                android:textColor="@color/fonttitle"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/shadowheader"
+            android:layout_marginTop="305dp">
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="1">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="310dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/valueBloodGiveHomeFrm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="@string/_75"
+                    android:textColor="@color/lightblue"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textBloodGiveHomeFrm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="@string/bloodgive"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="310dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/valueBloodReceivedHomeFrm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:gravity="center"
+                    android:text="@string/_100"
+                    android:textColor="@color/lightblue"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textBloodReceivedHomeFrm"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/bloodrecieved"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginTop="310dp"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/valueThanksHomeFrm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/_330"
+                    android:textColor="@color/lightblue"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/textThanksHomeFrm"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:gravity="center"
+                    android:text="@string/thanks"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/shadowheader"
+            android:layout_marginTop="382dp">
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="390dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgSearchDonorHomeFrm"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_search_donor" />
+
+                <TextView
+                    android:id="@+id/textSeacrhDonorHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/searchdonor"
+                    android:textColor="@color/fonttitle"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textDescSeacrDonorHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/searchdonor2"
+                    android:textColor="@color/fontdesc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="390dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgBloodNeededHomeFrm"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_blood_needed" />
+
+                <TextView
+                    android:id="@+id/textBloodNeededHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/bloodneeded"
+                    android:textColor="@color/fonttitle"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textDescBloodNeededHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/bloodneeded2"
+                    android:textColor="@color/fontdesc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgMessageHomeFrm"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_message" />
+
+                <TextView
+                    android:id="@+id/textMessageHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/message"
+                    android:textColor="@color/fonttitle"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textDescMessageHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/message2"
+                    android:textColor="@color/fontdesc" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgDonorHistoryHomeFrm"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_donor_history" />
+
+                <TextView
+                    android:id="@+id/textDonorHistoryHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/donorhistory"
+                    android:textColor="@color/fonttitle"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textDescDonorHistoryHomeFrm"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/donorhistory2"
+                    android:textColor="@color/fontdesc" />
+            </LinearLayout>
+        </GridLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
